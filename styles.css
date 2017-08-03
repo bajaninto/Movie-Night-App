@@ -1,0 +1,202 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*Typography*/
+/*font-family: 'Bungee Shade', cursive;
+font-family: 'Bungee', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+body {
+  max-width: 900px;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  margin: 0 5%;
+}
+.title {
+  color:red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+text-align: center;
+margin:4% 1% 4% 1%;
+/*margin-top: 4%;
+margin-bottom: 4%;*/
+}
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3  em;
+}
+
+h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.6em;
+}
+
+section{
+  margin-bottom: 10vh;
+}
+.header {
+  margin: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  wrap: nowrap;
+}
+.moviereel img, .dinnericon img{
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  transform: rotate(30deg);
+}
+.moviereel img {
+  transform: rotate(-30deg);
+}
+.dinnericon img {
+  transform: rotate(30deg);
+}
+
+.inputs {
+  text-align: center;
+}
+
+.foodButton {
+  width: 115px;
+  height: 30px;
+  border: 1px darkcyan solid;
+  background-color: rgba(47, 175, 175, 0.72);
+  color: white;
+  box-shadow: 2px 2px 5px #69b1c1;
+}
+
+.movieResults, .dinnerResults {
+  /*margin-left: 5%;*/
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;*/
+}
+
+.dinnerSelection {
+  /*margin-left: 5%;*/
+  /*margin-right: 5%;*/
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.dinnerSelection img{
+  margin:10px 30px;
+  padding:8px;
+  /*max-height: 350px;*/
+  max-width: 175px;
+  box-shadow: 5px 5px 5px  #c2c2d6;
+}
+.recipeDetails {
+  max-width: 30%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.movieSelection {
+  /*margin-left: 5%;
+  margin-right: 5%;*/
+  width: 90%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.movieResults img{
+  margin:10px 40px;
+  max-height: 350px;
+  max-width: 175px;
+  box-shadow: 5px 5px 5px  #c2c2d6;
+}
+
+.movieDetails {
+ float: right;
+ border: 1px solid gray;
+ background-color: hsla(162, 13%, 95%, 0.61);
+ color: gray;
+ border-radius: 2%;
+ padding: 20px;
+ max-width: 500px;
+ box-shadow: 5px 5px 5px  #c2c2d6;
+ font-weight: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: 1px darkgray solid;
+  background-color: hsla(162, 13%, 95%, 0.61);
+  width: 60px;
+  height: 30px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 3px  #c2c2d6;
+  color: gray;
+}
+.show {
+  display: block;
+}
+
+/*Media Queries*/
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .header {
+    /*display: block;*/
+    /*justify-content: flex-start;
+    align-items: flex-start;
+    wrap: wrap;*/
+  }
+  .moviereel, .dinnericon {
+    display: block;
+    float: left;
+  }
+  .moviereel img, .dinnericon img{
+    height: 75px;
+
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) and (min-width:479) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    wrap: wrap;
+  }
+  .moviereel img, .dinnericon img{
+    height: 75px;
+  }
+
+}

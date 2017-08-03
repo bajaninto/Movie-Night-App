@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Roboto" rel="stylesheet">
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+  </head>
+  <body class="container">
+    <div class="header">
+      <div class="moviereel">
+        <img src="movie_icon.png" alt="movie-take board">
+      </div>
+      <div class="container">
+        <h1 class="title">Dinner and a Show Planner</h1>
+        <h2>5 easy steps to an enjoyable evening with a fine pairing of</h2>
+        <h2>FOOD & FUN</h2>
+      </div>
+      <div class="dinnericon">
+        <img src="dinnericon.png" alt="dinner setting with plate, knife, and fork">
+      </div>
+    </div>
+    <!-- Food Selection -->
+    <section class="recipe ">
+      <div>
+        <!--  User to select ingredients-->
+        <h3 id=foodSelection>Step 1: Enter your ingredients using '+' as seperator</h3>
+        <!-- User to input ingredients for recipe -->
+
+        <h3>Step 2: Click "Get Recipes" </h3>
+        <!-- <label for="foodSelect">Step 2: Click "Get Recipes" </label> -->
+      <div class="inputs">
+        <input type="text" id="foodSelect" name="food" value="chicken + rice + carrot" placeholder="Enter ingredients, using '+' as seperator">
+        <button type="button" class="foodButton" name="foodButton">Get Recipes</button>
+      </div>
+      <!--  Results of dinner search will update the page-->
+      <h2>Recipe Selection</h2>
+      <h3>Step 3: Click on the picture for recipe details</h3>
+      <div class="dinnerResults" id="dinnerResults"></div>
+      <div class="dinnerSelection" id="dinnerSelection"></div>
+      <div class="inputs" id="edamam-badge" data-color="white"></div>
+      </div>
+    </section>
+      <!-- Movie Selection -->
+    <section>
+      <!-- User entry for movie genre or director-->
+      <div class="">
+        <h2>Movie Selection</h2>
+        <h3 id=genreSelection>Step 4: Select Your Favourite Actor</h3>
+        <form class="inputs">
+          <label for="movieActor">Actor Selection </label>
+          <!-- <input type="text" name="movie" value="" list="movieGenre" placeholder="Select Movie Genre "> -->
+          <select id ="movieActor">
+            <option value=""></option>
+            <option value="Meryl Streep">Meryl Streep</option>
+            <option value="Johnny Depp">Johnny Depp</option>
+            <option value="Tom Hanks">Tom Hanks</option>
+            <option value="Leonardo DiCaprio">Leonardo DiCaprio</option>
+            <option value="Tom Cruise">Tom Cruise</option>
+            <option value="Denzel Washington">Denzel Washington</option>
+            <option value="Dwayne Johnson">Dwayne Johnson</option>
+            <option value="Kevin Hart">Kevin Hart</option>
+            <option value="Angela Bassett">Angela Bassett</option>
+            <option value="Angelina Jolie">Angelina Jolie</option>
+            <option value="Jennifer Lopez">Jennifer Lopez</option>
+            <option value="Sigourney Weaver">Sigourney Weaver</option>
+            <option value="Angelina Jolie">Angelina Jolie</option>
+            <option value="Sandra Bullock">Sandra Bullock</option>
+            <option value="Julia Roberts">Julia Roberts</option>
+            <option value="Anne Hathaway">Anne Hathaway</option>
+            <option value="Halle Berry">Halle Berry</option>
+            <option value="Cameron Diaz">Cameron Diaz</option>
+            <option value="Scarlett Johansson">Scarlett Johansson</option>
+          </select>
+        </form>
+        <!--  Results of movie search will update the page-->
+        <h3>Step 5: Click on the poster for movie details</h3>
+      </div>
+      <div class="movieResults clearfix container" id="movieResults">
+        <div class="movieSelection" id="movieSelection">
+          <div class="movieDetails modal" id="movieDetails"></div>
+        </div>
+      </div>
+    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
